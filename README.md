@@ -17,13 +17,12 @@ This portfolio serves as a central hub to:
 
 ## 📁 Folder Structure
 
-portfolio/
-│
-├── index.html # Main HTML file (portfolio homepage)
-├── css/
-│ └── styles.css # External stylesheet for layout & design
-└── assets/ (optional) # Folder for images, icons, etc.
-
+- portfolio/
+- │
+- ├── index.html # Main HTML file (portfolio homepage)
+- ├── css/
+- │ └── styles.css # External stylesheet for layout & design
+- └── assets/ (optional) # Folder for images, icons, etc.
 
 ---
 
@@ -40,12 +39,9 @@ portfolio/
 
 ## 🧰 Tech Stack
 
-- **Frontend:** HTML5, CSS3, JavaScript
-- **Backend:** Node.js, Express.js, PHP
-- **Databases:** MongoDB, MySQL
-- **Authentication:** JWT, Role-Based Access Control
-- **Tools:** Git, GitHub, Netlify, Vercel, Render
-- **Icons:** Font Awesome
+- **HTML5** – Semantic structure and content
+- **CSS3** – Custom styling and responsive layout
+- **Font Awesome** – Icons for enhanced visual presentation
 
 ---
 
@@ -71,6 +67,7 @@ For collaborations, freelance opportunities, or tech partnerships:
 📧 **Email:** [ojoborjudeik@gmail.com](mailto:ojoborjudeik@gmail.com)  
 🔗 **LinkedIn:** [linkedin.com/in/ojobor-jude-ik](https://www.linkedin.com/in/ojobor-jude-ik-292b9612b/)  
 📍 **Location:** Enugu, Nigeria  
+- 📱 **Phone/WhatsApp:** [+2348061599859](https://wa.me/2348061599859)
 
 ---
 
