@@ -67,7 +67,7 @@ For collaborations, freelance opportunities, or tech partnerships:
 📧 **Email:** [ojoborjudeik@gmail.com](mailto:ojoborjudeik@gmail.com)  
 🔗 **LinkedIn:** [linkedin.com/in/ojobor-jude-ik](https://www.linkedin.com/in/ojobor-jude-ik-292b9612b/)  
 📍 **Location:** Enugu, Nigeria  
-- 📱 **Phone/WhatsApp:** [+2348061599859](https://wa.me/2348061599859)
+📱 **Phone/WhatsApp:** [+2348061599859](https://wa.me/2348061599859)
 
 ---
 
