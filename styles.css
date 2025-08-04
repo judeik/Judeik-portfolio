@@ -1,0 +1,248 @@
+/* ========================================
+   CSS Variables
+======================================== */
+:root {
+  --primary: #003366;
+  --accent: #007acc;
+  --text: #333;
+  --bg: #f9f9f9;
+}
+
+/* ========================================
+   Base Styles and Resets
+======================================== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ========================================
+   Header
+======================================== */
+header {
+  background: var(--primary);
+  color: white;
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+}
+
+header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  border: 3px solid white;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+/* ========================================
+   Navigation
+======================================== */
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: white;
+  margin: 0 0.8rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* ========================================
+   Layout
+======================================== */
+main {
+  padding: 2rem 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 900px) {
+  .container {
+    flex-direction: row;
+  }
+
+  aside {
+    flex: 1;
+    position: sticky;
+    top: 1rem;
+    align-self: flex-start;
+  }
+
+  article {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+/* ========================================
+   Section Styling
+======================================== */
+section {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.01);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* ========================================
+   Typography
+======================================== */
+h1, h2 {
+  color: var(--primary);
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+/* ========================================
+   Links
+======================================== */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ========================================
+   Projects Section
+======================================== */
+.project {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  background: #fdfdfd;
+}
+
+/* ========================================
+   Contact Form
+======================================== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background: var(--primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: var(--accent);
+}
+
+/* ========================================
+   Map Section
+======================================== */
+.map {
+  margin-top: 2rem;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* ========================================
+   Scroll-to-Top Button
+======================================== */
+.scroll-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--primary);
+  color: white;
+  padding: 0.6rem 0.9rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+.scroll-link:hover {
+  background: var(--accent);
+}
+
+/* ========================================
+   Footer
+======================================== */
+footer {
+  background: #eee;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
+/* ========================================
+   Responsive Adjustments
+======================================== */
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  header img {
+    width: 100px;
+    height: 100px;
+  }
+}
