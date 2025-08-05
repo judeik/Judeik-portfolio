@@ -1,16 +1,20 @@
-/* ========================================
-   CSS Variables
-======================================== */
+/* ==========================================================================
+   🌐 Global CSS Variables
+   --------------------------------------------------------------------------
+   Define branding colors and design constants for easy theme management.
+========================================================================== */
 :root {
-  --primary: #003366;
-  --accent: #007acc;
-  --text: #333;
-  --bg: #f9f9f9;
+  --primary: #003366;   /* Deep blue - brand identity */
+  --accent: #007acc;    /* Lively blue - call-to-action */
+  --text: #333;         /* Dark gray for body text */
+  --bg: #f9f9f9;        /* Light background for contrast */
 }
 
-/* ========================================
-   Base Styles and Resets
-======================================== */
+/* ==========================================================================
+   🧹 Base Resets & Global Styles
+   --------------------------------------------------------------------------
+   Standardizes appearance across browsers and sets base font/behavior.
+========================================================================== */
 * {
   box-sizing: border-box;
 }
@@ -27,9 +31,11 @@ body {
   line-height: 1.6;
 }
 
-/* ========================================
-   Header
-======================================== */
+/* ==========================================================================
+   🧢 Header Styling
+   --------------------------------------------------------------------------
+   Key branding area with circular image and prominent top bar.
+========================================================================== */
 header {
   background: var(--primary);
   color: white;
@@ -47,9 +53,11 @@ header img {
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
-/* ========================================
-   Navigation
-======================================== */
+/* ==========================================================================
+   🧭 Navigation Bar
+   --------------------------------------------------------------------------
+   Clean, hover-animated links for fast navigation.
+========================================================================== */
 nav {
   margin-top: 1rem;
 }
@@ -66,9 +74,11 @@ nav a:hover {
   color: var(--accent);
 }
 
-/* ========================================
-   Layout
-======================================== */
+/* ==========================================================================
+   🧱 Main Layout & Responsive Container
+   --------------------------------------------------------------------------
+   Flexible layout with adaptive structure for larger screens.
+========================================================================== */
 main {
   padding: 2rem 1rem;
 }
@@ -99,9 +109,11 @@ main {
   }
 }
 
-/* ========================================
-   Section Styling
-======================================== */
+/* ==========================================================================
+   🧩 Section Containers
+   --------------------------------------------------------------------------
+   Cards for content areas with animation and hover feedback.
+========================================================================== */
 section {
   padding: 1.5rem;
   background: white;
@@ -122,9 +134,11 @@ section:hover {
   }
 }
 
-/* ========================================
-   Typography
-======================================== */
+/* ==========================================================================
+   ✍️ Typography & Lists
+   --------------------------------------------------------------------------
+   Styling for headers and list presentation.
+========================================================================== */
 h1, h2 {
   color: var(--primary);
 }
@@ -133,9 +147,11 @@ ul {
   padding-left: 1.5rem;
 }
 
-/* ========================================
-   Links
-======================================== */
+/* ==========================================================================
+   🔗 Link Styles
+   --------------------------------------------------------------------------
+   Visually distinct anchor elements for usability.
+========================================================================== */
 a {
   color: var(--accent);
   text-decoration: none;
@@ -145,9 +161,11 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ========================================
-   Projects Section
-======================================== */
+/* ==========================================================================
+   📂 Projects Section
+   --------------------------------------------------------------------------
+   Project cards with soft shadow and margin spacing.
+========================================================================== */
 .project {
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -156,9 +174,11 @@ a:hover {
   background: #fdfdfd;
 }
 
-/* ========================================
-   Contact Form
-======================================== */
+/* ==========================================================================
+   ✉️ Contact Form
+   --------------------------------------------------------------------------
+   Accessible and responsive form fields with consistent spacing.
+========================================================================== */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -188,9 +208,11 @@ a:hover {
   background: var(--accent);
 }
 
-/* ========================================
-   Map Section
-======================================== */
+/* ==========================================================================
+   🗺️ Map Section
+   --------------------------------------------------------------------------
+   Map container with rounded border and overflow control.
+========================================================================== */
 .map {
   margin-top: 2rem;
   height: 300px;
@@ -199,40 +221,130 @@ a:hover {
   overflow: hidden;
 }
 
-/* ========================================
-   Scroll-to-Top Button
-======================================== */
+/* ==========================================================================
+   ⬆️ Scroll-to-Top Button
+   --------------------------------------------------------------------------
+   Floating fixed-position button with accessibility improvements.
+========================================================================== */
 .scroll-link {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: var(--primary);
-  color: white;
-  padding: 0.6rem 0.9rem;
+  background-color: #0078d7;
+  color: #fff;
+  padding: 12px 16px;
   border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  text-decoration: none;
   font-size: 1.2rem;
-  z-index: 1000;
+  z-index: 999;
   transition: background 0.3s ease;
 }
 
-.scroll-link:hover {
-  background: var(--accent);
+.scroll-link:hover,
+.scroll-link:focus {
+  background-color: #0053a4;
+  outline: 2px dashed #fff;
 }
 
-/* ========================================
-   Footer
-======================================== */
-footer {
-  background: #eee;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.95rem;
+/* ==========================================================================
+   🏷️ Project Status Tags
+   --------------------------------------------------------------------------
+   Visually distinguish ongoing/completed project labels.
+========================================================================== */
+.project-status,
+.project-status-ongoing {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  margin-left: 0.5rem;
 }
 
-/* ========================================
-   Responsive Adjustments
-======================================== */
+.project-status-ongoing {
+  background-color: #ffc107;
+}
+
+/* ==========================================================================
+   ✅ Contact Form Accessibility Enhancements
+   --------------------------------------------------------------------------
+   Improved spacing and focus feedback for screen readers and keyboard users.
+========================================================================== */
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  display: block;
+  margin-top: 1rem;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.contact-form button:hover,
+.contact-form button:focus {
+  background-color: #0056b3;
+  outline: 2px solid #fff;
+}
+
+/* ==========================================================================
+   🧭 Skip Link for Keyboard Navigation
+   --------------------------------------------------------------------------
+   Provides screen reader users a way to bypass navigation.
+========================================================================== */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
+}
+
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  z-index: 1000;
+  display: inline-block;
+}
+
+/* ==========================================================================
+   🌍 Accessible Embedded Map Styling
+========================================================================== */
+.map-iframe-secondary {
+  width: 100%;
+  height: auto;
+  border: 0;
+  border-radius: 8px;
+}
+
+/* ==========================================================================
+   📱 Responsive Design Tweaks
+   --------------------------------------------------------------------------
+   Optimizes for smaller screen real estate.
+========================================================================== */
 @media (max-width: 600px) {
   nav {
     display: flex;
@@ -245,4 +357,16 @@ footer {
     width: 100px;
     height: 100px;
   }
+}
+
+/* ==========================================================================
+   🧾 Footer
+   --------------------------------------------------------------------------
+   Simple, clean footer with standard text formatting.
+========================================================================== */
+footer {
+  background: #eee;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
 }

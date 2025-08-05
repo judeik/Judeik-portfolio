@@ -1,61 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta Tags for SEO and Accessibility -->
+  <!-- ========================================================
+       Meta Tags | SEO Optimization & Responsive Design Setup
+  ========================================================= -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portfolio of Ojobor Jude Ikechukwu - Full-Stack Web Developer" />
+
+  <!-- Branding & Icons for Cross-Device Favicon Compatibility -->
   <link rel="apple-touch-icon" sizes="180x180" href="https://i.postimg.cc/q7VCvNfL/apple-touch-icon.png">
-  <link rel="icon" type="images/png" sizes="32x32" href="https://i.postimg.cc/k4wVsw-21/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/k4wVsw-21/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://i.postimg.cc/9fdwRcCj/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+
+  <!-- Page Title -->
   <title>Ojobor Jude Ikechukwu | Portfolio</title>
 
-  <!-- Font Awesome Icons -->
+  <!-- FontAwesome for Scalable Vector Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<!-- External Style for Layout & Design -->
-<link rel="stylesheet" href="css/styles.css">
+  <!-- External Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-  <!-- Floating Scroll-to-Top Button -->
+    <!-- ========================================================
+       UX Improvement | Skip-Link for Screen Readers
+  ========================================================= -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Scroll-to-Top Button for User-Friendly Navigation -->
   <a href="#top" class="scroll-link" aria-label="Scroll to Top">
     <i class="fas fa-arrow-up"></i>
   </a>
 
-  <!-- Header with Author Image and Intro -->
+  <!-- ========================================================
+       HEADER | Personal Branding, Role Intro & Primary Navigation
+  ========================================================= -->
   <header role="banner" id="top">
     <h1><i class="fas fa-user"></i> Ojobor Jude Ikechukwu</h1>
     <p>Full-Stack Developer | Tech Educator | Virtual Assistant</p>
-    
-    <!-- Navigation Section -->
+
+    <!-- Primary Navigation for Portfolio Sections -->
     <nav role="navigation" aria-label="Main Navigation">
-      <a href="#about"><i class="fas fa-id-badge"></i> About</a>
-      <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
-      <a href="#languages"><i class="fas fa-code"></i> Languages</a>
-      <a href="#certifications"><i class="fas fa-certificate"></i> Certifications</a>
-      <a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
-      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="#about" accesskey="a"><i class="fas fa-id-badge"></i> About</a>
+      <a href="#education" accesskey="e"><i class="fas fa-graduation-cap"></i> Education</a>
+      <a href="#languages" accesskey="l"><i class="fas fa-code"></i> Languages</a>
+      <a href="#certifications" accesskey="c"><i class="fas fa-certificate"></i> Certifications</a>
+      <a href="#projects" accesskey="p"><i class="fas fa-project-diagram"></i> Projects</a>
+      <a href="#contact" accesskey="m"><i class="fas fa-envelope"></i> Contact</a>
     </nav>
   </header>
 
-  <!-- Main Content Area -->
-  <main>
+  <!-- ========================================================
+       MAIN SECTION |Accessible Sections & Sidebar | Core Content - About, Education, Projects
+  ========================================================= -->
+  <main id="main-content" role="main">
     <div class="container">
-      <!-- Sidebar with Static Info -->
+      
+      <!-- ========== SIDEBAR ==========
+           Contains Static Info: Bio, Education, Tech Skills
+      ================================= -->
       <aside>
+        <!-- About Me -->
         <section id="about">
           <h2>About Me</h2>
           <p>
-            I'm Ojobor Jude Ikechukwu, a full-stack developer passionate about secure, accessible, and inclusive software. 
-            I work with Node.js, Express, MongoDB, PHP, and MySQL. Also a tech educator, VA, and content creator.
+            I'm Ojobor Jude Ikechukwu, a full-stack developer passionate about building secure, accessible, and inclusive web solutions. 
+            I work with Node.js, Express, MongoDB, PHP, and MySQL. Also a tech educator, virtual assistant, and content creator.
           </p>
-          <!-- <div class="profile-img">
-            <img src="https://avatars.githubusercontent.com/u/98987148?v=4" alt="Ojobor Jude Ikechukwu" />
-      </div> -->
         </section>
 
+        <!-- Education Section -->
         <section id="education">
           <h2>Education</h2>
           <p>B.Sc (Ed.) Computer Science, University of Nigeria, Nsukka (2016 – 2022)</p>
@@ -64,6 +82,7 @@
           </a>
         </section>
 
+        <!-- Languages & Tools -->
         <section id="languages">
           <h2>Programming Languages & Tools</h2>
           <ul>
@@ -71,10 +90,11 @@
             <li><i class="fab fa-node"></i> Node.js, Express.js, MongoDB</li>
             <li><i class="fab fa-php"></i> PHP, MySQL, SQL</li>
             <li><i class="fas fa-tools"></i> Git, GitHub, Render, Netlify, Vercel</li>
-            <li><i class="fas fa-shield-alt"></i> JWT, REST API, MVC</li>
+            <li><i class="fas fa-shield-alt"></i> JWT, REST API, MVC Architecture</li>
           </ul>
         </section>
 
+        <!-- Certifications -->
         <section id="certifications">
           <h2>Certifications</h2>
           <ul>
@@ -88,12 +108,18 @@
         </section>
       </aside>
 
-      <!-- Projects and Contact Section -->
+      <!-- ========== MAIN ARTICLE ==========
+           Highlights Projects and Contact Info
+      ===================================== -->
       <article>
-        <!-- Projects Section -->
-       <section id="projects">
+
+        <!-- Projects Portfolio --> 
+         <!-- Project Cards - Reusable Format -->
+        <section id="projects">
           <h2>Projects</h2>
-          <div class="project">
+
+          <!-- Project Cards - Reusable Format -->
+            <div class="project">
            <h3><i class="fas fa-globe"></i> Lost & Found System</h3>
             <p>
             A secure full-stack web application for reporting and recovering lost items. 
@@ -150,8 +176,8 @@
             </p>
             <p><strong>Tech Stack:</strong> PHP, MySQL, HTML5, CSS3, JavaScript</p>
           </div>
-  <div class="project">
-            <h3><i class="fas fa-chart-line"></i> SmartBizStack Platform <span class="project-status-ongoing">(Ongoing)</span></h3>
+              <div class="project">
+                <h3><i class="fas fa-chart-line"></i> SmartBizStack Platform <span class="project-status-ongoing">(Ongoing)</span></h3>
             <p>
                 An <strong>AI-powered SaaS platform</strong> for MSMEs, built with <strong>React</strong>, <strong>Express</strong>, and <strong>MongoDB</strong>. 
                 Features include <strong>role-based access control (RBAC)</strong>, real-time <strong>business analytics dashboards</strong>, and scalable architecture to support small and growing enterprises.
@@ -175,10 +201,15 @@
   </p>
   <p><strong>Tech Stack:</strong> PHP, MySQL, HTML5, CSS3, JavaScript</p>
 </div>
-        <!-- Contact Section with Form and Map -->
+          
+        </section>
+        
+        <!-- Contact Section -->
         <section id="contact">
           <h2>Contact Me</h2>
-          <form class="contact-form" action="mailto:ojoborjudeik@gmail.com" method="post" enctype="text/plain">
+
+          <!-- Basic Contact Form -->
+          <form class="contact-form" action="https://formsubmit.co/ojoborjudeik@gmail.com" method="post" enctype="text/plain">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required placeholder="Your full name" />
 
@@ -190,24 +221,26 @@
 
             <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
           </form>
-          <!-- Embedded Map of Author's Location -->
+
+          <!-- Embedded Location Map -->
           <div class="map" aria-label="Google Map Location">
-              <iframe 
+            <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.198560190194!2d7.390478873732345!3d6.866793919081434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1044e62b4f8f7af5%3A0x3b5430707c0f278d!2sDivine%20Heritage%20Computer!5e0!3m2!1sen!2sng!4v1754393639566!5m2!1sen!2sng"
-              width="600"
-              height="450"
+              width="600" height="450"
               class="map-iframe-secondary"
               allowfullscreen=""
               loading="lazy"
               title="Map showing Divine Heritage Computer, Nigeria">
-          </iframe>
+            </iframe>
           </div>
         </section>
       </article>
     </div>
   </main>
 
-  <!-- Footer Section -->
+  <!-- ========================================================
+       FOOTER | Copyright, Social Media & Legal Notice
+  ========================================================= -->
   <footer>
     <p>
       &copy; 2025 Ojobor Jude Ikechukwu. All rights reserved. |
