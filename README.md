@@ -15,6 +15,14 @@ This portfolio serves as a central hub to:
 
 ---
 
+## 🌐 Live Portfolio
+
+You can explore the live version of this portfolio website here:
+
+🔗 **[Live View of Portfolio](https://judeik.github.io/Judeik-portfolio/)**
+
+---
+
 ## 📁 Folder Structure
 
 - portfolio/
