@@ -335,9 +335,9 @@ a:hover {
 ========================================================================== */
 .map-iframe-secondary {
   width: 100%;
-  height: auto;
-  border: 0;
+  height: 400px; /* Or any desired height */
   border-radius: 8px;
+  overflow: hidden;
 }
 
 /* ==========================================================================
