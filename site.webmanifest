@@ -1,0 +1,40 @@
+{
+  "id": "/",
+  "name": "Ojobor Jude Ikechukwu - Portfolio",
+  "short_name": "JudeIK",
+  "lang": "en",
+  "description": "Portfolio of Ojobor Jude Ikechukwu — Full-Stack Developer, Tech Educator, and Virtual Assistant. Skilled in React, TypeScript, Node.js (Express), PHP, MySQL, MongoDB, and Python (beginner). Showcasing projects like the AI-powered Smart School Portal and more.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#0d1117",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["portfolio", "developer", "education", "technology"],
+  "developer": {
+    "name": "Ojobor Jude Ikechukwu",
+    "url": "https://judeik.github.io/Judeik-portfolio/"
+  },
+  "related_applications": [
+    {
+      "platform": "web",
+      "url": "https://github.com/judeik"
+    },
+    {
+      "platform": "web",
+      "url": "https://www.linkedin.com/in/ojobor-jude-ik-292b9612b/"
+    }
+  ]
+}

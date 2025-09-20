@@ -9,10 +9,18 @@
   <meta name="description" content="Portfolio of Ojobor Jude Ikechukwu - Full-Stack Web Developer" />
 
   <!-- Branding & Icons for Cross-Device Favicon Compatibility -->
-  <link rel="apple-touch-icon" sizes="180x180" href="https://i.postimg.cc/q7VCvNfL/apple-touch-icon.png">
+  <!-- PNG icons (for better quality) -->
   <link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/k4wVsw-21/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://i.postimg.cc/9fdwRcCj/favicon-16x16.png">
-  <link rel="manifest" href="images/favicon/site.webmanifest">
+  
+  <!-- Apple Touch Icon (iOS home screen) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://i.postimg.cc/q7VCvNfL/apple-touch-icon.png">
+  
+  <!-- Standard favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="/site.webmanifest">
   <title>Ojobor Jude Ikechukwu | Portfolio</title>
 
   <!-- FontAwesome for Scalable Vector Icons -->
@@ -40,6 +48,9 @@
   <header role="banner" id="top">
     <h1><i class="fas fa-user"></i> Ojobor Jude Ikechukwu</h1>
     <p>Full-Stack Developer | Tech Educator | Virtual Assistant</p>
+    <p class="tech-stack">
+      <i class="fas fa-code"></i> React, TypeScript, Node.js (Express), PHP, MySQL, MongoDB, Python (Beginner)
+    </p>
 
     <!-- Primary Navigation for Portfolio Sections -->
     <nav role="navigation" aria-label="Main Navigation">
@@ -83,13 +94,15 @@
         <!-- Languages & Tools -->
         <section id="languages">
           <h2>Programming Languages & Tools</h2>
-          <ul>
-            <li><i class="fab fa-html5"></i> HTML, <i class="fab fa-css3-alt"></i> CSS, <i class="fab fa-js"></i> JavaScript</li>
-            <li><i class="fab fa-node"></i> Node.js, Express.js, MongoDB</li>
-            <li><i class="fab fa-php"></i> PHP, MySQL, SQL</li>
-            <li><i class="fas fa-tools"></i> Git, GitHub, Render, Netlify, Vercel</li>
-            <li><i class="fas fa-shield-alt"></i> JWT, REST API, MVC Architecture</li>
-          </ul>
+            <ul>
+              <li><i class="fas fa-code"></i> Full-Stack Developer</li>
+              <li><i class="fab fa-react"></i> React, TypeScript</li>
+              <li><i class="fab fa-node-js"></i> Node.js (Express.js)</li>
+              <li><i class="fab fa-php"></i> PHP, <i class="fas fa-database"></i> MySQL, MongoDB</li>
+              <li><i class="fab fa-python"></i> Python (Beginner)</li>
+              <li><i class="fas fa-tools"></i> Git, GitHub, Vercel, Netlify, Render</li>
+              <li><i class="fas fa-shield-alt"></i> REST API, JWT, MVC</li>
+            </ul>
         </section>
 
         <!-- Certifications -->
@@ -117,6 +130,23 @@
           <h2>Projects</h2>
 
           <!-- Project Cards - Reusable Format -->
+           <div class="project">
+              <h3><i class="fas fa-school"></i> Smart School Portal <span class="project-status">(Ongoing)</span></h3>
+              <p>
+                An <strong>AI-powered School Management System</strong> designed for secondary schools with 
+                <strong>student & teacher dashboards</strong>, <strong>attendance tracking</strong>, <strong>grading</strong>, 
+                <strong>fee management</strong>, and <strong>announcements</strong>. 
+                The portal features an <strong>AI chatbot (OpenAI)</strong> on the landing page for instant student 
+                support and query handling. 
+                Ongoing development focuses on <strong>AI-driven analytics</strong> for performance prediction, 
+                personalized learning recommendations, and smarter administrative decision-making.
+              </p>
+              <p><strong>Tech Stack:</strong> Node.js (Express), MongoDB, JavaScript, HTML5, CSS3, OpenAI API</p>
+              <a href="https://smart-school-po7u.onrender.com/" target="_blank" rel="noopener">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+
             <div class="project">
            <h3><i class="fas fa-globe"></i> Lost & Found System</h3>
             <p>
